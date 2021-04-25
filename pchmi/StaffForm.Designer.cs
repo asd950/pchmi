@@ -39,15 +39,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonParts = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonParts = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(337, 204);
+            this.buttonBack.Location = new System.Drawing.Point(362, 204);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             // buttonSuppliers
             // 
-            this.buttonSuppliers.Location = new System.Drawing.Point(175, 204);
+            this.buttonSuppliers.Location = new System.Drawing.Point(94, 204);
             this.buttonSuppliers.Name = "buttonSuppliers";
             this.buttonSuppliers.Size = new System.Drawing.Size(75, 23);
             this.buttonSuppliers.TabIndex = 1;
@@ -67,11 +67,11 @@
             // 
             // searchAuto
             // 
-            this.searchAuto.Location = new System.Drawing.Point(94, 204);
+            this.searchAuto.Location = new System.Drawing.Point(196, 204);
             this.searchAuto.Name = "searchAuto";
-            this.searchAuto.Size = new System.Drawing.Size(75, 23);
+            this.searchAuto.Size = new System.Drawing.Size(79, 23);
             this.searchAuto.TabIndex = 2;
-            this.searchAuto.Text = "Поиск авто";
+            this.searchAuto.Text = "Автомобили";
             this.searchAuto.UseVisualStyleBackColor = true;
             this.searchAuto.Click += new System.EventHandler(this.searchAuto_Click);
             // 
@@ -150,23 +150,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Оформленипе заявки";
             // 
-            // buttonParts
-            // 
-            this.buttonParts.Location = new System.Drawing.Point(256, 204);
-            this.buttonParts.Name = "buttonParts";
-            this.buttonParts.Size = new System.Drawing.Size(75, 23);
-            this.buttonParts.TabIndex = 12;
-            this.buttonParts.Text = "Запчасти";
-            this.buttonParts.UseVisualStyleBackColor = true;
-            this.buttonParts.Click += new System.EventHandler(this.buttonParts_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(120, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 20);
-            this.textBox1.TabIndex = 11;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -175,6 +158,23 @@
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Заказ:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(120, 101);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(305, 20);
+            this.textBox1.TabIndex = 11;
+            // 
+            // buttonParts
+            // 
+            this.buttonParts.Location = new System.Drawing.Point(281, 204);
+            this.buttonParts.Name = "buttonParts";
+            this.buttonParts.Size = new System.Drawing.Size(75, 23);
+            this.buttonParts.TabIndex = 12;
+            this.buttonParts.Text = "Запчасти";
+            this.buttonParts.UseVisualStyleBackColor = true;
+            this.buttonParts.Click += new System.EventHandler(this.buttonParts_Click);
             // 
             // StaffForm
             // 

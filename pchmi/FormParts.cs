@@ -81,7 +81,7 @@ namespace pchmi
         private void dataGridViewParts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowInd = dataGridViewParts.CurrentCell.RowIndex;
-            string str = String.Format("{0}, {1}, {2}, {3}",dataGridViewParts.Rows[rowInd].Cells[1].Value.ToString().Replace(" ", ""),
+            string str = String.Format("{0}, {1}, {2}, {3}",dataGridViewParts.Rows[rowInd].Cells[1].Value.ToString(),
                 dataGridViewParts.Rows[rowInd].Cells[2].Value.ToString().Replace(" ", ""),
             dataGridViewParts.Rows[rowInd].Cells[3].Value.ToString().Replace(" ", ""),
                 dataGridViewParts.Rows[rowInd].Cells[4].Value.ToString().Replace(" ", "")) ;

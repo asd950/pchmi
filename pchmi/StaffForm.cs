@@ -43,8 +43,8 @@ namespace pchmi
                 string email = tbEmail.Text;
 
                 string sqlExpression = String.Format(
-                    "INSERT INTO Suppliers (name, phone_number, email)" +
-                    "VALUES ('{0}', '{1}', '{2}')", name, phone, email);
+                    "INSERT INTO Suppliers (name, phone_number, email, date, zakaz)" +
+                    "VALUES (N'{0}', '{1}', '{2}', current_timestamp, N'{3}')", name, phone, email, textBox1.Text);
                 SqlCommand command = new SqlCommand(sqlExpression, connection);
                 command.ExecuteNonQuery();
                 MessageBox.Show("Вы создали заявку!");
