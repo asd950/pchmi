@@ -14,9 +14,11 @@ namespace pchmi
 {
     public partial class StaffForm : Form
     {
+        int user;
         string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        public StaffForm()
+        public StaffForm(int userid)
         {
+            user = userid;
             InitializeComponent();
             //using (SqlConnection connection = new SqlConnection(connectionString))
             //{
@@ -43,8 +45,8 @@ namespace pchmi
                 string email = tbEmail.Text;
 
                 string sqlExpression = String.Format(
-                    "INSERT INTO Suppliers (name, phone_number, email, date, zakaz)" +
-                    "VALUES (N'{0}', '{1}', '{2}', current_timestamp, N'{3}')", name, phone, email, textBox1.Text);
+                    "INSERT INTO Suppliers (name, phone_number, email, date, zakaz, seller)" +
+                    "VALUES (N'{0}', '{1}', '{2}', current_timestamp, N'{3}', '{4}')", name, phone, email, textBox1.Text, user);
                 SqlCommand command = new SqlCommand(sqlExpression, connection);
                 command.ExecuteNonQuery();
                 MessageBox.Show("Вы создали заявку!");
