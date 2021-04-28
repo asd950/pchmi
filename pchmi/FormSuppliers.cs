@@ -10,13 +10,16 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 
+
 namespace pchmi
 {
     public partial class FormSuppliers : Form
     {
+        
         string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         public FormSuppliers()
         {
+            
             InitializeComponent();
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -53,6 +56,11 @@ namespace pchmi
                     }
                 }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("dogovor.doc");
         }
     }
 }

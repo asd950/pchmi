@@ -20,4 +20,5 @@ namespace pchmi
         }
     }
     public delegate void Dlg(string data);
+    public delegate void userDlg(int data);
 }

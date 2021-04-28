@@ -35,6 +35,7 @@ namespace pchmi
         {
             string login = tbLogin.Text;
             string password = tbPassword.Text;
+            int user;
             //MessageBox.Show("Неправильный логин или пароль!");
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -51,7 +52,9 @@ namespace pchmi
                     
                         if ((reader.GetString(1).Replace(" ", "") == login) && (reader.GetString(2).Replace(" ", "") == password))
                         {
-                            (new StaffForm()).Show();
+                        var ID = reader.GetValue(0);
+                        int id = Convert.ToInt32(ID);
+                            (new StaffForm(id)).Show();
                             this.Hide();
                         }
                        
